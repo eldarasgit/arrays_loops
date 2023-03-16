@@ -31,13 +31,13 @@ public class Main {
 
         plants3[0] = "Azuolas";
         plants3[1] = "Morka";
-        plants3[2] = "Bulve";
+        plants3[2] = "Kanapes";
         plants3[3] = "Tulpe";
-        plants3[4] = "Kanapes";
-        plants3[5] = "Agurkas";
-        plants3[6] = "Braske";
-        plants3[7] = "Obuolys";
-        plants3[8] = "Spinatai";
+        plants3[4] = "Agurkas";
+        plants3[5] = "Braske";
+        plants3[6] = "Obuolys";
+        plants3[7] = "Spinatai";
+        plants3[8] = "Bulve";
         plants3[9] = "Ridikas";
 
         for (int i = 0; i < plants3.length; i++) {
@@ -53,13 +53,13 @@ public class Main {
 
         plants3[0] = "Azuolas";
         plants3[1] = "Morka";
-        plants3[2] = "Bulve";
+        plants3[2] = "Kanapes";
         plants3[3] = "Tulpe";
-        plants3[4] = "Kanapes";
-        plants3[5] = "Agurkas";
-        plants3[6] = "Braske";
-        plants3[7] = "Obuolys";
-        plants3[8] = "Spinatai";
+        plants3[4] = "Agurkas";
+        plants3[5] = "Braske";
+        plants3[6] = "Obuolys";
+        plants3[7] = "Spinatai";
+        plants3[8] = "Bulve";
         plants3[9] = "Ridikas";
 
         for (int i = 0; i < plants3.length; i++) {
@@ -73,13 +73,13 @@ public class Main {
 
         plants3[0] = "Azuolas";
         plants3[1] = "Morka";
-        plants3[2] = "Bulve";
+        plants3[2] = "Kanapes";
         plants3[3] = "Tulpe";
-        plants3[4] = "Kanapes";
-        plants3[5] = "Agurkas";
-        plants3[6] = "Braske";
-        plants3[7] = "Obuolys";
-        plants3[8] = "Spinatai";
+        plants3[4] = "Agurkas";
+        plants3[5] = "Braske";
+        plants3[6] = "Obuolys";
+        plants3[7] = "Spinatai";
+        plants3[8] = "Bulve";
         plants3[9] = "Ridikas";
 
         for (int i = plants3.length - 1; i >= 0; i--) {
@@ -108,6 +108,75 @@ public class Main {
         }
         System.out.println();
 
+
+//          Astunta uzduotis
+
+        System.out.println("----- 8 uzd -----");
+
+        int count = 0;
+        for (int i = 0; i < 20; i++) {
+            if (i % 2 == 0) {
+                count++;
+            }
+        }
+        System.out.println("Porine reiksme: " + count + " kartu.");
+
+
+//          Devinta uzduotis
+
+        System.out.println("----- 9 uzd -----");
+
+        int shortNames = 0;
+        int longNames = 0;
+
+
+        plants3[0] = "Azuolas";
+        plants3[1] = "Morka";
+        plants3[2] = "Kanapes";
+        plants3[3] = "Tulpe";
+        plants3[4] = "Agurkas";
+        plants3[5] = "Braske";
+        plants3[6] = "Obuolys";
+        plants3[7] = "Spinatai";
+        plants3[8] = "Bulve";
+        plants3[9] = "Ridikas";
+
+        for (int i = 0; i < plants3.length; i++) {
+            if (plants3[i].length() <= 5) {
+                shortNames++;
+            }
+            if (plants3[i].length() >= 7) {
+                longNames++;
+            }
+        }
+        System.out.println("Trumpesni, nei 5 simvoliai: " + shortNames);
+        System.out.println("Ilgesni, nei 7 simvoliai: " + longNames);
+
+
+//          Desimta uzduotis
+
+        System.out.println("----- 10 uzd -----");
+
+
+        int middleNames = 0;
+
+        plants3[0] = "Azuolas";
+        plants3[1] = "Morka";
+        plants3[2] = "Kanapes";
+        plants3[3] = "Tulpe";
+        plants3[4] = "Agurkas";
+        plants3[5] = "Braske";
+        plants3[6] = "Obuolys";
+        plants3[7] = "Spinatai";
+        plants3[8] = "Bulve";
+        plants3[9] = "Ridikas";
+
+        for (int i = 0; i < plants3.length; i++) {
+            if (plants3[i].length() > 5 && plants3[i].length() < 7) {
+                middleNames++;
+            }
+        }
+        System.out.println("Tarp 5 ir 7 simboliu: " + middleNames + " zodis");
 
 
 
