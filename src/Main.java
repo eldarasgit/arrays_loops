@@ -101,7 +101,7 @@ public class Main {
 
         System.out.println("----- 7 uzd -----");
 
-        for (int i = 10; i <= 50; i = i + 2) {
+        for (int i = 10; i <= 50; i += 2) {
             if (i % 10 == 0)
                 continue;
             System.out.print(i + " ");
@@ -114,6 +114,7 @@ public class Main {
         System.out.println("----- 8 uzd -----");
 
         int count = 0;
+
         for (int i = 0; i < 20; i++) {
             if (i % 2 == 0) {
                 count++;
@@ -157,7 +158,6 @@ public class Main {
 
         System.out.println("----- 10 uzd -----");
 
-
         int middleNames = 0;
 
         plants3[0] = "Azuolas";
@@ -179,12 +179,55 @@ public class Main {
         System.out.println("Tarp 5 ir 7 simboliu: " + middleNames + " zodis");
 
 
+//          1 S uzduotis
+
+        System.out.println("----- 1 Sunk uzd -----");
+
+
+        int[] nums2 = new int[300];
+
+        int count1 = 0;
+
+        for (int i = 0; i < 300; i++) {
+            nums2[i] = (int) (Math.round(Math.random() * 300));
+            if (nums2[i] > 150) {
+                count1++;
+            }
+            if (nums2[i] > 250) {
+                System.out.print("[" + nums2[i] + "] ");
+            } else {
+                System.out.print(nums2[i] + " ");
+            }
+        }
+        System.out.println();
+        System.out.println("Skaiciu daugaiu uz 150: " + count1);
+
+
+//        2 S uzduotis
+
+        System.out.println("----- 2 Sunk uzd -----");
+
+        String kabl = "";
+        for (int i = 1; i < 3000 ; i++) {
+            if (i % 77 == 0) {
+                kabl = kabl + i + ",";
+            }
+        }
+        System.out.println(kabl.substring(0,kabl.length()-1));
 
 
 
+//        3 S uzduotis
 
+        System.out.println("----- 3 Sunk uzd -----");
 
-
+        for (int i = 0; i <= 25; i++) {
+            String zvaig = "*";
+            for (int a = 0; a <= 25; a++) {
+                zvaig = zvaig + "*";
+            }
+            System.out.println(zvaig);
+        }
 
 
 
