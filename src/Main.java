@@ -222,7 +222,7 @@ public class Main {
         System.out.println("----- 3 Sunk uzd -----");
 
         for (int i = 0; i <= 25; i++) {
-            String zvaig = "*";
+            String zvaig = "";
             for (int a = 0; a <= 25; a++) {
                 zvaig = zvaig + "*";
             }
@@ -294,6 +294,7 @@ public class Main {
 
         int petrasPoints = 0;
         int kazysPoints = 0;
+        int saskCount = 0;
 
         while (true) {
             int petrasRnd = 10 + (int) Math.round(Math.random() * 10);
@@ -301,19 +302,20 @@ public class Main {
 
             int kazysRnd = 5 + (int) Math.round(Math.random() * 20);
             kazysPoints += kazysRnd;
+            saskCount++;
 
             if (petrasPoints >= 222 || kazysPoints >= 222)
                 break;
         }
 
         if (petrasPoints > kazysPoints) {
-            System.out.println("Laimejo Petras: " + petrasPoints);
+            System.out.println("Partiju: " + saskCount + ". Laimejo Petras: " + petrasPoints);
         }
         if (petrasPoints < kazysPoints) {
-            System.out.println("Laimejo Kazys: " + kazysPoints);
+            System.out.println("Partju: " + saskCount + ". Laimejo Kazys: " + kazysPoints);
         }
         if (petrasPoints == kazysPoints) {
-            System.out.println("Lygiosios " + petrasPoints + ":" + kazysPoints);
+            System.out.println("Partiju: " + saskCount + "Lygiosios " + petrasPoints + ":" + kazysPoints);
         }
 
 
