@@ -230,6 +230,149 @@ public class Main {
         }
 
 
+//        5 S (a) uzduotis
+
+        System.out.println("----- 5 (a) Sunk uzd -----");
+
+        while (true) {
+            int coinRnd = (int) Math.round(Math.random());
+            if (coinRnd == 1) {
+                System.out.println("S");    // 1 - skaicius
+            }
+            if (coinRnd == 0) {               // 0 - herbas
+                System.out.println("H");
+                break;
+            }
+        }
+
+
+//        5 S (b) uzduotis
+
+        System.out.println("----- 5 (b) Sunk uzd -----");
+
+        int coinCount = 0;
+
+        while (true) {
+            int coinRnd = (int) Math.round(Math.random());
+            if (coinRnd == 0) {
+                System.out.println("H");
+                coinCount++;
+            } else {
+                System.out.println("S");
+            }
+            if (coinCount >= 3) {
+                break;
+            }
+        }
+
+
+//        5 S (c) uzduotis
+
+        System.out.println("----- 5 (c) Sunk uzd -----");
+
+        int coinCount3 = 0;
+
+        while (true) {
+            int coinRnd = (int) Math.round(Math.random());
+            if (coinRnd == 0) {
+                System.out.print("H");
+                coinCount3++;
+            } else {
+                System.out.print("S");
+                coinCount3 = 0;
+            }
+            if (coinCount3 >= 3) {
+                break;
+            }
+        }
+
+
+
+//        6 S Uzduotis
+
+        System.out.println("----- 6 Sunk uzd -----");
+
+        int petrasPoints = 0;
+        int kazysPoints = 0;
+
+        while (true) {
+            int petrasRnd = 10 + (int) Math.round(Math.random() * 10);
+            petrasPoints += petrasRnd;
+
+            int kazysRnd = 5 + (int) Math.round(Math.random() * 20);
+            kazysPoints += kazysRnd;
+
+            if (petrasPoints >= 222 || kazysPoints >= 222)
+                break;
+        }
+
+        if (petrasPoints > kazysPoints) {
+            System.out.println("Laimejo Petras: " + petrasPoints);
+        }
+        if (petrasPoints < kazysPoints) {
+            System.out.println("Laimejo Kazys: " + kazysPoints);
+        }
+        if (petrasPoints == kazysPoints) {
+            System.out.println("Lygiosios " + petrasPoints + ":" + kazysPoints);
+        }
+
+
+//        8 S (a) Uzduotis
+
+        System.out.println("----- 8 a Sunk uzd -----");
+
+//        int vinisGylis;
+//        int vinisCount;
+
+        for (int i = 0; i < 5; i++) {
+
+           int vinisCount = 0;
+           int vinisGylis = 0;
+
+            while (true) {
+                int rndGylis = 5 + (int) Math.round(Math.random() * 15);
+                vinisGylis += rndGylis;
+                vinisCount++;
+                if (vinisGylis >= 85) {
+                    break;
+                }
+            }
+            System.out.println((i + 1) + " vinis ikalta per " + vinisCount + " smugius:");
+            System.out.println("Ikalimo gylis: " + vinisGylis + " mm");
+        }
+
+//        8 S (b) Uzduotis
+
+        System.out.println("----- 8 b Sunk uzd -----");
+
+//        int vinisGylis;
+//        int vinisCount;
+
+        for (int i = 0; i < 5; i++) {
+
+           int vinisCount = 0;
+           int vinisGylis = 0;
+
+            while (true) {
+                int rndGylis = 20 + (int) Math.round(Math.random() * 10);
+                int smugis = (int) Math.round(Math.random());
+                if (smugis == 1) {
+                    vinisGylis += rndGylis;
+                }
+                vinisCount++;
+                if (vinisGylis >= 85) {
+                    break;
+                }
+            }
+            System.out.println((i + 1) + " vinis ikalta per " + vinisCount + " smugius:");
+            System.out.println("Ikalimo gylis: " + vinisGylis + " mm");
+        }
+
+
+
+
+
+
 
 
 
